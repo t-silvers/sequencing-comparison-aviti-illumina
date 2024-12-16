@@ -16,6 +16,7 @@ with open('config/config.json', 'r') as f:
 
 module infant_mbiome:
     snakefile: '/viper/ptmp/thosi/wv-multilib/workflow/Snakefile'
+    config: config
 
 
 use rule * from infant_mbiome as bb_*
