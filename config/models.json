@@ -1,0 +1,26 @@
+{
+    "models": {
+        "bracken": "workflow/models/bracken.sql",
+        "fastqs": "workflow/models/fastqs.sql",
+        "msa": "workflow/models/msa.sql",
+        "samples": {
+            "default": "workflow/models/samples/default.sql",
+            "20241105_AV234501_B-PE75-Ad-HiO": "workflow/models/samples/20241105_AV234501_B-PE75-Ad-HiO.sql",
+            "230119_B001_Lib": "workflow/models/samples/230119_B001_Lib.sql",
+            "230913_B002_B001_Lib": "workflow/models/samples/230913_B002_B001_Lib.sql",
+            "240704_B002_B001_Lib_AVITI_reseq": "workflow/models/samples/230913_B002_B001_Lib.sql"
+        },
+        "samplesheet": "workflow/models/samplesheet.sql",
+        "sequencing": {
+            "default": "workflow/models/sequencing/default.sql",
+            "20241105_AV234501_B-PE75-Ad-HiO": "workflow/models/sequencing/20241105_AV234501_B-PE75-Ad-HiO.sql",
+            "230119_B001_Lib": "workflow/models/sequencing/230119_B001_Lib.sql",
+            "230913_B002_B001_Lib": "workflow/models/sequencing/230913_B002_B001_Lib.sql",
+            "240704_B002_B001_Lib_AVITI_reseq": "workflow/models/sequencing/230913_B002_B001_Lib.sql"
+        },
+        "variants": {
+            "vcf_clean": "workflow/models/variants/vcf_clean.sql",
+            "snvs": "workflow/models/variants/snvs.sql"
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+	"wildcards": {
+		"libraries": "20241105_AV234501_B-PE75-Ad-HiO|230119_B001_Lib|230913_B002_B001_Lib|240704_B002_B001_Lib_AVITI_reseq",
+		"all-species": "Bacteroides_xylanisolvens|Bifidobacterium_adolescentis|Bifidobacterium_bifidum|Bifidobacterium_longum|Escherichia_coli|Enterococcus_faecalis|Staphylococcus_aureus|Klebsiella_oxytoca",
+		"species": "Bifidobacterium_adolescentis|Bifidobacterium_bifidum|Bifidobacterium_longum",
+		"families": "B001|B002"
+	},
+	"identification": {
+		"minimum_fraction_reference": ".5",
+		"minimum_readspow_reference": 3,
+		"taxprofiler": {
+			"args": "--run_kraken2 --run_bracken --run_krona --run_profile_standardisation",
+			"databases": "/nexus/posix0/MPIIB-keylab/config/nextflow/taxprofiler_databases.csv",
+			"nxf_args": "-work-dir logs/nxf/taxprofiler/work -config /nexus/posix0/MPIIB-keylab/config/nextflow/taxprofiler.config",
+			"profiles": "singularity"
+		}
+	},
+	"sequence_typing": {
+		"bactopia": {
+			"conda_pkgs_dirs": "/viper/ptmp/thosi/.conda/pkgs",
+			"coverage": 100,
+			"datasets_cache": "/nexus/posix0/MPIIB-keylab/public_data/bactopia/data/datasets",
+			"nfconfig": "/nexus/posix0/MPIIB-keylab/config/nextflow/bactopia.config",
+			"profiles": "standard"
+		}
+	},
+	"mapping": {
+		"bactmap": {
+			"args": "--run_kraken2 --run_bracken --run_krona --run_profile_standardisation",
+			"databases": "/nexus/posix0/MPIIB-keylab/config/nextflow/taxprofiler_databases.csv",
+			"nxf_args": "-config /nexus/posix0/MPIIB-keylab/config/nextflow/bactmap.config",
+			"profiles": "singularity"
+		}
+	},
+	"pseudogenome": {
+		"total_read_depth": 6,
+		"maf": ".95",
+		"quality": 30,
+		"strand_read_depth": 2
+	}
+}
