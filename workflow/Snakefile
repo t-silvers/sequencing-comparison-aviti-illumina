@@ -14,12 +14,12 @@ with open('config/config.json', 'r') as f:
 # - sequence typing
 
 
-module infant_mbiome:
-    snakefile: '/viper/ptmp/thosi/wv-multilib/workflow/Snakefile'
-    config: config
+# module infant_mbiome:
+#     snakefile: '/viper/ptmp/thosi/wv-multilib/workflow/Snakefile'
+#     config: config
 
 
-use rule * from infant_mbiome as bb_*
+# use rule * from infant_mbiome as bb_*
 
 
 rule all:
