@@ -1,4 +1,4 @@
-rule:
+rule create_data_lake:
     input:
         ancient('results/{species}/variants/{sample}.vcf.gz'),
     output:
